@@ -1,0 +1,29 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+
+    @media (min-width: 320px) and (max-width: 425px) {
+      grid-template-columns: repeat(4, 1fr);
+
+      .hex{
+        font-size: .8rem;
+      }
+    }
+  @media (min-width:426px ) and (max-width:768px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.text-white {
+  color: #2a0f6d
+}
+
+.text-center{
+  text-align: center;
+}
